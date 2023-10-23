@@ -1,0 +1,65 @@
+Skenario Testing:
+1. Register View Model Test:
+ a. Ketika proses register berhasil
+    - Memastikan data tidak null
+    - Memastikan mengembalikan Result.Success
+    
+ b. Ketika proses register gagal
+    - Memastikan data tidak null
+    - Memastikan mengembalikan Result.Error
+ 
+2. Login View Model 
+ a. Ketika proses login berhasil
+    - Memastikan data tidak null
+    - Memastikan mengembalikan Result.Success
+   
+ b. Ketika proses login gagal
+    - Memastikan data tidak null
+    - Memastikan mengembalikan Result.Error
+
+3. Home View Model Test:
+ a. Ketika data pada story tidak null dan berhasil untuk mendapatkan data
+    - Memastikan data tidak null 
+    - Memastikan ukuran id sama
+    - Memastikan ukuran data yang dimiliki sama
+    - Memastikan data dikembalikan (return)
+
+4. Detail View Model Test:
+ a. Ketika data pada Detail tidak null dan berhasil
+    - Memastikan data tidak null
+    - Memastikan mengembalikan Result.Success
+    - Memastikan fungsi getStoryDetail() yang ada di pagingRepository terpanggil
+
+ b. Ketika data pada Detail sama dengan null dan gagal
+    - Memastikan data tidak null
+    - Memastikan pengembalian Result.Error
+    - Memastikan fungsi getStoryDetail() yang ada di pagingRepository terpanggil
+
+5. Upload View Model Test:
+ a. Ketika proses menambahkan story baru berhasil
+    - Memastikan data tidak null
+    - Memastikan mengembalikan Result.Success
+  
+ b. Ketika proses menambahkan story baru gagal
+    - Memastikan data tidak null
+    - Memastikan mengembalikan Result.Error
+
+6.  Maps View Model Test:
+ a. Ketika proses mengambil data story dengan lokasi berhasil
+    - Memastikan fungsi getLocation() dari class pagingRepository terpanggil
+    - Memastikan data tidak null
+    - Memastikan mengembalikan Result.Success
+   
+ b. Ketika proses mengambil data story dengan lokasi gagal
+    - Memastikan fungsi getLocation() dari class pagingRepository terpanggil
+    - Memastikan data tidak null
+    - Memastikan mengembalikan Result.Error
+
+7. Setting View Model Test
+ a. Ketika data di userPref tidak null dan mengembalikan data berhasil
+    - Memastikan token tidak null
+    - Memastikan isLogin adalah true
+    - Memastikan fungsi getUser() dari class pagingRepository terpanggil
+
+ b. Ketika logout dilakukan
+    - Memastikan fungsi logout() dari class pagingRepository terpanggil
